@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: -webkit-linear-gradient(#589ffd,rgb(255, 255, 58),#589ffd);
+}
+.container{
+    margin: 5% auto;
+    width: 50vw;
+    height: 80vh;
+    background-color: rgb(152, 250, 152);
+    color: #fff;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+form{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+form input{
+    display: inline-block;
+    width: 60%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 2px solid rgb(26, 209, 26);
+    margin-right: 30px;
+    font-size: 16px;
+}
+form input:focus{
+    outline: none;
+}
+form button{
+    background-color: transparent;
+    border: 2px solid rgb(26, 209, 26);
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgb(26, 209, 26);
+}
+.btn:hover{
+    background-color: rgb(152, 250, 152);
+    color: #fff;
+}
+.btn:active{
+    background-color: rgb(26, 209, 26);
+}
+ul{
+    border-radius: 10px;
+    display: block;
+    list-style: none;
+    width: 80%;
+    margin: 10px 10% 20px 10%;
+    height: 350px;
+    background-color: #fff;
+    padding: 10px 20px;
+    overflow: scroll;
+}
+.list-group-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(26, 209, 26);
+    padding: 10px ;
+    color: #f00;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 5px 0;
+    transition: 0.2s ease-in-out;
+}
+.button-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-group button{
+    background-color: transparent;
+    border: 2px solid rgb(26, 209, 26);
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgb(26, 209, 26);
+}
+.bx-check{
+    position: absolute;
+    right: 9%;
+    font-size: 25px;
+}
+.bx-check:hover{
+    transform: scale(1.2);
+}
+.bxs-trash{
+    font-size: 23px;
+
+}
+.bxs-trash:hover{
+    transform: scale(1.2);
+}
+.completed{
+    border: 1px solid rgb(26, 209, 26);
+    background-color: #ffffff;
+    color: rgb(26, 209, 26);
+}
