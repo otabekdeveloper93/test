@@ -8,9 +8,9 @@ body{
     background: -webkit-linear-gradient(#589ffd,rgb(255, 255, 58),#589ffd);
 }
 .container{
-    margin: 5% auto;
+    margin: 2% auto;
     width: 50vw;
-    height: 80vh;
+    max-height: auto;
     background-color: rgb(152, 250, 152);
     color: #fff;
     border-radius: 30px;
@@ -19,9 +19,11 @@ body{
 form{
     width: 100%;
     padding: 10px 30px;
+    padding-left: 100px;
     background-color: transparent;
-    display: flex;
+    display: block;
     justify-content: center;
+    text-align: justify;
 }
 form input{
     display: inline-block;
@@ -58,10 +60,10 @@ ul{
     list-style: none;
     width: 80%;
     margin: 10px 10% 20px 10%;
-    height: 350px;
+    height: 300px;
     background-color: #fff;
     padding: 10px 20px;
-    overflow: scroll;
+    overflow: auto;
 }
 .list-group-btn{
     position: relative;
@@ -77,11 +79,14 @@ ul{
     transition: 0.2s ease-in-out;
 }
 .button-group{
+    padding: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    
 }
 .button-group button{
+    display: inline-block;
     background-color: transparent;
     border: 2px solid rgb(26, 209, 26);
     padding: 15px 30px;
@@ -89,6 +94,7 @@ ul{
     border-radius: 30px;
     font-size: 18px;
     color: rgb(26, 209, 26);
+    margin-bottom: 30px;
 }
 .bx-check{
     position: absolute;
@@ -100,13 +106,20 @@ ul{
 }
 .bxs-trash{
     font-size: 23px;
-
 }
 .bxs-trash:hover{
     transform: scale(1.2);
 }
+
 .completed{
     border: 1px solid rgb(26, 209, 26);
     background-color: #ffffff;
     color: rgb(26, 209, 26);
+}
+
+.d-none{
+    display: none;
+}
+.flex{
+    display: flex;
 }
