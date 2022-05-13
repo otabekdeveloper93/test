@@ -2,15 +2,19 @@ const input = document.getElementById('text');
 const add = document.getElementById('add'),
 blank = document.getElementById('blank');
 const btnAll = document.querySelector('#btn-all');
-
+const modalWindow = document.querySelector('.modal');
+const modalBtn = document.querySelector('.btn-modal')
+const closeModal = document.querySelector('#close-x')
 add.addEventListener('click', addList);
 
 function addList(e){
     e.preventDefault();
-    if(input.value.length == 0 || input.value == " "){
+    let itemValue = input.value;
+    if(itemValue.length == 0 || itemValue == " "){
         alert("Iltimos ma'lumotni to'gri kiriting! ")
+    }else if(itemValue == +itemValue){
+        alert("siz raqam kiritdingiz!")
     }else{
-        let itemValue = input.value;
         let listGroup = document.createElement("li");
         listGroup.className = "list-group-btn";
         listGroup.appendChild(document.createTextNode(itemValue));
@@ -30,5 +34,10 @@ function addList(e){
         });
     }
 }
+modalBtn.addEventListener('click', ()=>{
+    modalWindow.classList.add('d-block')
 
-
+})
+closeModal.addEventListener('click', ()=>{
+    modalWindow.classList.remove('d-block')
+})
